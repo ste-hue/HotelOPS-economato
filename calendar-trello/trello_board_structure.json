@@ -1,0 +1,2215 @@
+{
+  "name": "Settimana Template Economato - 2025-01-13",
+  "desc": "Board generato automaticamente dalla settimana template del calendario Google\n\nSettimana: 2025-01-13T00:00:00 - 2025-01-20T00:00:00\nSettimana n. 3 del 2025",
+  "defaultLists": false,
+  "lists": [
+    {
+      "name": "Lunedì",
+      "pos": 0
+    },
+    {
+      "name": "Martedì",
+      "pos": 1000
+    },
+    {
+      "name": "Mercoledì",
+      "pos": 2000
+    },
+    {
+      "name": "Giovedì",
+      "pos": 3000
+    },
+    {
+      "name": "Venerdì",
+      "pos": 4000
+    },
+    {
+      "name": "Sabato",
+      "pos": 5000
+    },
+    {
+      "name": "Domenica",
+      "pos": 6000
+    }
+  ],
+  "cards": [
+    {
+      "name": "CARICO REP. RECEPTION",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:15 - 15:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N2xjZWRhMXNsdTNnaDE3YmpsNHN0Z2cwOGogY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 7lceda1slu3gh17bjl4stgg08j",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T14:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 15:00 - 16:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2poaWxvcWU0cGI0N3UxcTZlMnF0NmJ0dGwgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3jhiloqe4pb47u1q6e2qt6bttl",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T15:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWlnaDMxZWJsYWNsM3UzMTM3YWNkdWxqam4gY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 5igh31eblacl3u3137acduljjn",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:45 - 12:45\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2pmc2Rna3NjcTltMm50aDZkYzZvMHUwa3QgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3jfsdgkscq9m2nth6dc6o0u0kt",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T11:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:00 - 15:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2Ywam1iNTZpOTcwcGJmdjc3NzNxb2IwanAgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3f0jmb56i970pbfv7773qob0jp",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T14:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. BAR ROOF",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 15:00 - 16:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGEzc2VoNmtua3MxdGUwMGUwM2xwZnEwN2kgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 4a3seh6knks1te00e03lpfq07i",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T15:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. HSK HOTEL",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 16:00 - 17:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2ZydmRxcGc4YTA2bDJiNG05M2FtdnJyZ2ggY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3frvdqpg8a06l2b4m93amvrrgh",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T16:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N2E1b2w0ZDNybG1vYmoxdjkxc3MyNTkyMDcgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 7a5ol4d3rlmobj1v91ss259207",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:45 - 12:45\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M3MxZThxMjRlcGxudWl1YnZ2MW0xOGtnajIgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3s1e8q24eplnuiubvv1m18kgj2",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T11:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:00 - 15:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGJzYTdxajhrcThzbjVvbGV0cnM1NjBwajEgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 4bsa7qj8kq8sn5oletrs560pj1",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T14:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGQ3NHRrc2duZzJwbmw5MjFqOWUwM2E2ZmEgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 4d74tksgng2pnl921j9e03a6fa",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:00 - 12:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MDIwcGQ5dmVnOHVjZmczcjZ0dGtqcmM1OXYgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 020pd9veg8ucfg3r6ttkjrc59v",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmV0ZGFyZ29wZ242bzhxaW5pZ2xya2V0aHYgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 6etdargopgn6o8qiniglrkethv",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:00 - 12:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHE0cDUzMDk4Y2hkbGpnZWJoZGc0M2pwa3AgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 0q4p53098chdljgebhdg43jpkp",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:00 - 15:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2QyY2x2YnFvZjdqZzY1cm9oNnFpZGt1NGggY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3d2clvbqof7jg65roh6qidku4h",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T14:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. BAR ROOF",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 15:00 - 16:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzltaXB0amFoZmpuYjZla3UzYzFwc285cTUgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 79miptjahfjnb6eku3c1pso9q5",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T15:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NDQ4cWxjNXY0ZTIxdjg1ODQxbDk1MDZyamIgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 448qlc5v4e21v85841l9506rjb",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:00 - 12:00\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGViaXM0b3FvYzg0Y2Zub2JnMXM1MDU4dnAgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 4ebis4oqoc84cfnobg1s5058vp",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:00 - 15:00\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=Nmpsc3R1aHU1YnRibm4yYjhpcGFyZjFwZTUgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 6jlstuhu5btbnn2b8iparf1pe5",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T14:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. HSK CVM",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 16:00 - 17:00\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N2I1bTFrZ2plY3Q2Z3RvMjhzYm05aHU0MWsgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 7b5m1kgject6gto28sbm9hu41k",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T16:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2JsMGE3NWs3Mmo2ZWpjYnVnOGo0MmRncjIgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 3bl0a75k72j6ejcbug8j42dgr2",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. RISTORANTE",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 11:00 - 12:00\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NXQ2dmZqbWlnNWYyZGNuOTNtamhhdDc1ZGIgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 5t6vfjmig5f2dcn93mjhat75db",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. COLAZIONI ",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 14:00 - 15:00\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzZsY2R0bGIwcG9xYnFnMnQ5bGQ5NWlidG0gY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 76lcdtlb0poqbqg2t9ld95ibtm",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T14:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "CARICO REP. SPIAGGIA",
+      "desc": "**Calendario:** CARICO A REPARTO\n\n**Orario:** 17:30 - 18:15\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzlsZnI2MWpyYWZzMGczY2ZnOWF0Z2E3OXUgY185YjM2Y2VjZTNhODc2NzZmMWUxM2RjN2Y1MTkwNDRiNTcxMDBlYTE1ODk1MDgyMWJiMDQ3NTVlNGZiNDU4YjcyQGc\n\n**ID Evento:** 79lfr61jrafs0g3cfg9atga79u",
+      "labels": [
+        {
+          "color": "green",
+          "name": "CARICO A REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T17:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -MAGLIO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 08:30 - 09:15\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWUyM2ptaXZ1Zm5pMDlyN2FlcmVubzAya3UgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1e23jmivufni09r7aereno02ku",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T08:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE - FABBROCINO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:00 - 09:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWRlbDdlY283M2R0MzA4Z2Q4YjUxMWkzaTMgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5del7eco73dt308gd8b511i3i3",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T09:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -BELLAGAIA",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:30 - 10:15\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWdwOHZxMmtpZXE1MWgzdXQ4Ym90ODRsbmcgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5gp8vq2kieq51h3ut8bot84lng",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T09:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE CHIMICA PEPE",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 10:00 - 10:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M3NlZDRsZmZ2OGt2ajc4OTNhbHNrNmpkNTAgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 3sed4lffv8kvj7893alsk6jd50",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GAROFALO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 10:15 - 11:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGViZXBjMmVya2tmbGlxNWdvdGdrNmZibnQgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 4ebepc2erkkfliq5gotgk6fbnt",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T10:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -MIGLIORE",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 11:15 - 12:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHMwcWplYmFvNWJiazhzcmgza3I4bzJsczMgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 0s0qjebao5bbk8srh3kr8o2ls3",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T11:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -SANTOLO (pasta fresca)",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 11:15 - 12:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MXBjNWtndnE1c3BpMmw4MXYzNjVvZmljYWQgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1pc5kgvq5spi2l81v365oficad",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T11:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -LE CROISSANT",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 11:15 - 12:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzdkY3R1ZWtka3JvcWVmdTVqdG1tMGk0MGsgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 77dctuekdkroqefu5jtmm0i40k",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T11:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -NETTO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:00 - 12:45\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWkwdTZzdmc0NHFhZm8wMHEyMGtkdG1mMmIgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1i0u6svg44qafo00q20kdtmf2b",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T12:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M20zNmFlMTB0cHRuYm44aW9hZTJuYmsxdGQgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 3m36ae10tptnbn8ioae2nbk1td",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MXJjaTdoNG43YzQyYmxhM3VidWFrc3Eza3QgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1rci7h4n7c42bla3ubuaksq3kt",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PREGIS",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 14:15 - 15:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTUxOWJvbzIycW9kam5qaWdmcmZvMTRoMTggY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1519boo22qodjnjigfrfo14h18",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T14:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -STUDIO 4",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 15:45 - 16:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGxmODFzYzk4bHQ2anMxYnY4N3ZqMjdpaWogY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 4lf81sc98lt6js1bv87vj27iij",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T15:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PREGIS",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:30 - 10:15\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGc0bjlwZmN2OGRodDY3MXU3MHBob2VycXYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 4g4n9pfcv8dht671u70phoerqv",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T09:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGlrbzNyZWowNjcyMDFuN3BxNmgyaXJmcXYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 4iko3rej067201n7pq6h2irfqv",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NjdsdWxpcmZoOGg5OWFvYzJtMDF0aHNtbmsgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 67lulirfh8h99aoc2m01thsmnk",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PREGIS",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:45 - 10:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2VobTNpYjN2NGhlajRxbTZ0M3NqMWNkYTUgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 3ehm3ib3v4hej4qm6t3sj1cda5",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T09:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N243aWlnYzU1b2NqMDZzbzAxbnFkN3Y1NHAgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 7n7iigc55ocj06so01nqd7v54p",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWlwdDZocG1paDYzYmM2YWUwZGVlczA3ZnUgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5ipt6hpmih63bc6ae0dees07fu",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -FABBROCINO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 08:30 - 09:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NjY5MGxjaHRjdjM5bzFmZjhkbGZzbGkyNW4gY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 6690lchtcv39o1ff8dlfsli25n",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T08:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GENERAL BEVERAGE",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:15 - 10:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MGU5bTBsN2ZoOTlodWVzamIwYjNiOGt0NTYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 0e9m0l7fh99huesjb0b3b8kt56",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T09:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -MR BRK",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 10:15 - 11:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NjRnZWc0NGpiOGNibHQ0cnJqaWVtdDZoaDEgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 64geg44jb8cblt4rrjiemt6hh1",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T10:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -NETTO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 11:15 - 12:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MDNwN3RtcHRpZW9yZWF0OTlsbDgzOHA0dnIgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 03p7tmptieoreat99ll838p4vr",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T11:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE CHIMICA PEPE",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 11:30 - 12:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MG91cTd2MWNsOXQwOTllY25zcW5kZWJwbG0gY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 0ouq7v1cl9t099ecnsqndebplm",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T11:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GAROFALO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:00 - 12:45\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=Mzg2cWFtZ2Q4ZG9lbDZjZXE1Ym9xNHQ3cTkgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 386qamgd8doel6ceq5boq4t7q9",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T12:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmprdmMwaG9mMm1hdjA1cGdyOWhpbGFicm4gY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 6jkvc0hof2mav05pgr9hilabrn",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MjFrOXEwM3EwNDhpMmZwdDVqY2pwN3Y3YTUgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 21k9q03q048i2fpt5jcjp7v7a5",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -STUDIO 4",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 08:15 - 09:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmJpbWwxN21rYTZ1YzdncmM5b2ZnZzF0ODIgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 6biml17mka6uc7grc9ofgg1t82",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T08:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -VICART",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 09:15 - 10:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmQ3NGltdTM1bDhvbmdlNzZraXBzbW9uOGMgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 6d74imu35l8onge76kipsmon8c",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T09:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PREGIS",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 10:00 - 10:45\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NTQ2MDhvZXFoaDFqanIxMTUxbmtwOHJrNDMgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 54608oeqhh1jjr1151nkp8rk43",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -BELLAGAIA",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 10:45 - 11:15\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzJpNGZldmR1NWI1ZDU5dWtiMGQ5dXFwYmcgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 72i4fevdu5b5d59ukb0d9uqpbg",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T10:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWlrYmFmajlrOGR2MjlibnZidDlqNjVlbGYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 1ikbafj9k8dv29bnvbt9j65elf",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHBnZ2hpOWdsM3BlM3RxbmltbXBib2w0aDIgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 0pgghi9gl3pe3tqnimmpbol4h2",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NTY4OWhpcDlkYzkwYWMyajZhdGhsdmdqcXYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5689hip9dc90ac2j6athlvgjqv",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:00 - 13:45\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MGtoajEyM2YyN2phMnB2ZjlmYzRrbDRtb2UgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 0khj123f27ja2pvf9fc4kl4moe",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T13:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -PRISCO",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 12:45 - 13:30\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NW8yZnNkcWJtOTN0bXNnb3N0bnMwdjQ3c3AgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5o2fsdqbm93tmsgostns0v47sp",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T12:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "ORDINE -GREEN VALLEY",
+      "desc": "**Calendario:** ORDINE FORNITORE\n\n**Orario:** 13:15 - 14:00\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NXAzdTRzbTllZGdzMjNwY2I1N3BpZGg5NWYgY19hMjRiMDQ5OTkxMjkzZmI0ZDIxZGVjZWVjMWUyMzVjYmYwMjVmODg1MDE3NTE1NmJkZmJjZDdlYjIzZTAyMmZiQGc\n\n**ID Evento:** 5p3u4sm9edgs23pcb57pidh95f",
+      "labels": [
+        {
+          "color": "yellow",
+          "name": "ORDINE FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T13:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:00 - 11:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2VnNHE4bjcwM2hrcHI0ZjNqNmI3MnJtcHQgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 3eg4q8n703hkpr4f3j6b72rmpt",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA ",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzNjdTUwYmhxNm80NHU3Zm81Y3A2OWRycG8gY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 73cu50bhq6o44u7fo5cp69drpo",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:00 - 11:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWl1cGlpajZmb2VkMmYxNWQ2YnQwOG85NXYgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 5iupiij6foed2f15d6bt08o95v",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NnZsOXNocjNxZXFhMm1yN2Q1a3M2djhkZ2MgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 6vl9shr3qeqa2mr7d5ks6v8dgc",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:15 - 11:45\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MW1zcDhwZWQ3NzNiZjhncTlwdGJ0NzAxdDQgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 1msp8ped773bf8gq9ptbt701t4",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T11:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NHFjZGxuNWswMHRkazliaHNqb29jcjA0MmwgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 4qcdln5k00tdk9bhsjoocr042l",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA BAR ",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 22:15 - 22:45\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MzU4bWxyc2U1ZDhlY21qaXNwNWRqcXE3ZWsgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 358mlrse5d8ecmjisp5djqq7ek",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T22:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA HSK RESIDENCE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 16:30 - 17:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzQxMmJtOG5yaXRlbjhuanZzanRuZ3BpNXYgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 7412bm8nriten8njvsjtngpi5v",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T16:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MjI0ZXVxc3JrdXZuZTlkNW1xYjhyaGczNG0gY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 224euqsrkuvne9d5mqb8rhg34m",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:00 - 11:30\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NW9xYWRsNXQ5dnJzcTcyNXNpNnR1cGlwamEgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 5oqadl5t9vrsq725si6tupipja",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. RECEPTION",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 16:30 - 17:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MGNmMW5xOHB1aWZoZGJlcHZpNXJyY2Y5dmogY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 0cf1nq8puifhdbepvi5rrcf9vj",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T16:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGVmYTdwaW9ja2N2bDAzOWZvMTlzcW9pbXEgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 4efa7piockcvl039fo19sqoimq",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:00 - 11:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NHRnZG1hNG4wbHFhcjdzZG40NTB2dDB1MG0gY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 4tgdma4n0lqar7sdn450vt0u0m",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWdhZnVrcWlpNDk4ZDY3b2FpdDVjN2VrbTYgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 1gafukqii498d67oait5c7ekm6",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA COLAZIONE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 11:00 - 11:30\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGtjdTBqOTRwcGo0NmpvZWtqaGs2Z2RxbWkgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 4kcu0j94ppj46joekjhk6gdqmi",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T11:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA HSK HOTEL",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 16:30 - 17:00\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmMyM2doZmlnb2o2cGNuNW1yMnZ1Y3ZmY3QgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 6c23ghfigoj6pcn5mr2vucvfct",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T16:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA REP. SPIAGGIA",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 17:00 - 17:30\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWoybWVqaGdxOWdmOTA5aThkN2tkajRwaXMgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 1j2mejhgq9gf909i8d7kdj4pis",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T17:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "RiCHIESTA BAR ",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 22:15 - 22:45\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTZjbjJxMzdiZDg5aWIxbmFzZ2JnNHV1YWQgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 16cn2q37bd89ib1nasgbg4uuad",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T22:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "RICHIESTA RISTORANTE",
+      "desc": "**Calendario:** RICHIESTA REPARTO\n\n**Orario:** 22:15 - 22:45\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N25qcjU0aHJkZnY1dGszbjY5anFzODJza2MgY19mZmYyNTczN2YxNWUwYjFjNjhhNjllYTllYzczMGE4ZmQzMTU3YWJkZjliYzQwNWY2YWNlMTRlYmE3NWVkOGE0QGc\n\n**ID Evento:** 7njr54hrdfv5tk3n69jqs82skc",
+      "labels": [
+        {
+          "color": "orange",
+          "name": "RICHIESTA REPARTO"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T22:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHJpZjJrNGFhNmJnbWhpcXBzMW1qY3NlOXQgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 0rif2k4aa6bgmhiqps1mjcse9t",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "Algida ",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Descrizione:**\nScarico gelati\n\n**Orario:** 09:00 - 09:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTZxYXN0NnFkZmY3MDZlMHVwMW1uMjZ2dHMgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 16qast6qdff706e0up1mn26vts",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T09:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "VICART",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:00 - 10:00\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NGFsNzFvZTIxajlnNHNjbzVzNThxMXBuNnQgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 4al71oe21j9g4sco5s58q1pn6t",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T09:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "STUDIO 4 - 1 Volta al Mese -Tovagliato + Linea cortesia",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:00 - 10:45\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MnVuYTcxNGI3b2RmcWFpdTU4ajVhcGwxcTAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 2una714b7odfqaiu58j5apl1q0",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Lunedì 13/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N2VodW44aW90N3ZiajA0MjNqcGwxdGZ0MDAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 7ehun8iot7vbj0423jpl1tft00",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Lunedì"
+        }
+      ],
+      "due": "2025-01-13T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Lunedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHU0ODVubXJpaHNwaDFhMWtsdm9vaTdtbWggY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 0u485nmrihsph1a1klvooi7mmh",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GAROFALO - Frutta e Verdura",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 08:30 - 09:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N2h0c2l0MWxzZWNtdGh0YTlrdTA1cTY5dDggY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 7htsit1lsecmthta9ku05q69t8",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T08:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "MAGLIO - Uova",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:15 - 09:45\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmZlbWc3bDNqazFrNGFxcjVmOW8xb2RyczYgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6femg7l3jk1k4aqr5f9o1odrs6",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T09:15:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "FABBROCINO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:45 - 10:45\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTBnc2lqNXVlNHNhbG1wcWo2ZnVmanQxbHMgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 10gsij5ue4salmpqj6fufjt1ls",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T09:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWp1ZThxMDVxb2ZkNTk2Zm1sYzNsbWd1bWogY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 1jue8q05qofd596fmlc3lmgumj",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PREGIS",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MjBnZmUzdWM0NW5pMTRsY2Q5NGthdHB0MGggY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 20gfe3uc45ni14lcd94katpt0h",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "LE CROISSANT",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:45 - 11:45\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=N3R0ZHI5M2o3OWM2bmoxNWp1NTlqaXQxamsgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 7ttdr93j79c6nj15ju59jit1jk",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T10:45:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "BELLAGAIA",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 12:00 - 13:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NnBnOHZwazE0dm01OHVpbjZqNjUwZ2wxYW4gY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6pg8vpk14vm58uin6j650gl1an",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T12:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CHIMICA PEPE",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 13:00 - 13:30\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NDllOWRkM2F2ZGt1b2Q5dWFxdDFna2c3ZjIgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 49e9dd3avdkuod9uaqt1gkg7f2",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T13:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "NETTO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 15:00 - 16:00\n**Giorno:** Martedì 14/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MzJzNHVqaGl1c2U5OHE0dWFxMjIwdDNzcmkgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 32s4ujhiuse98q4uaq220t3sri",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Martedì"
+        }
+      ],
+      "due": "2025-01-14T15:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Martedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MzJjZ2c3M2c4bjY2MnE3dTJuaWI3YjNzYmsgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 32cgg73g8n662q7u2nib7b3sbk",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "SANTOLO - (pasta fresca)",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 08:30 - 09:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzZyMmJkZ3Y2aG9ibnVyZTMwYmJsYnA0Ym8gY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 76r2bdgv6hobnure30bblbp4bo",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T08:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GENERAL BEVERAGE - 1 volta al mese ",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:00 - 09:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2NiYW5lam5zbXFzcnJjMGJmb2U3ZThyZXAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 3cbanejnsmqsrrc0bfoe7e8rep",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T09:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "MR BRK- 1 volta al mese",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:30 - 10:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHFndmdldGFlb2pqam91NWhiNzZvNzVvc2UgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 0qgvgetaeojjjou5hb76o75ose",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T09:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "STUDIO 4 - 1 Volta al Mese -Tovagliato + Linea cortesia",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:00 - 11:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MzNiMGEzaDVybmk3ZHRlZ2Y5YW1xOWUzZTAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 33b0a3h5rni7dtegf9amq9e3e0",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PREGIS",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTFzamY1NjAxY2hmbWUydDduaWUycThkaWsgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 11sjf5601chfme2t7nie2q8dik",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmEyYnN1Zm8xdWxnc3FmaWd1Y3NrcHJjcGcgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6a2bsufo1ulgsqfigucskprcpg",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "A. MIGLIORE - Torte",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 15:00 - 16:00\n**Giorno:** Mercoledì 15/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NjdwcHQyMXJidDZjODFsaDJzdW8zM3QxOTEgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 67ppt21rbt6c81lh2suo33t191",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Mercoledì"
+        }
+      ],
+      "due": "2025-01-15T15:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Mercoledì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWszazU5c2tuaWwybmtqbTBkMXY5YWZwMGYgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 5k3k59sknil2nkjm0d1v9afp0f",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "VICART- EMERGENZE",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:00 - 10:45\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWM1a2FsNTFvOHJnaWR2bDJhNGRxMGR2ZWIgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 5c5kal51o8rgidvl2a4dq0dveb",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MGx2ZzB1Z2tsa3QyaHJqbGxrNjl2NmdkMGQgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 0lvg0ugklkt2hrjllk69v6gd0d",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PREGIS",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Giovedì 16/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MnZqMmxnbmhoN212dnFkdnJwN3JjZ2tsZDIgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 2vj2lgnhh7mvvqdvrp7rcgkld2",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Giovedì"
+        }
+      ],
+      "due": "2025-01-16T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Giovedì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MTc1dnRjdmpidWhsN25mMG5pbmViZjVpM2ogY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 175vtcvjbuhl7nf0ninebf5i3j",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "LE CROISSANT- Emergenze",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 07:30 - 08:15\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MXU5Z3FrbzVlcXA3Z3Yzb2JxamNmcjlqdGsgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 1u9gqko5eqp7gv3obqjcfr9jtk",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T07:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GAROFALO - Frutta e Verdura",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 09:00 - 10:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmVpcWdhdWJicWxuMGpzN3JjNTQ2NTd1aXIgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6eiqgaubbqln0js7rc54657uir",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T09:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "FABBROCINO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:00 - 11:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NHF1azFzdHFmNnNnMWF0NzJ1c2M5bzA4cm8gY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 4quk1stqf6sg1at72usc9o08ro",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "Algida",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Descrizione:**\nScarico gelati\n\n**Orario:** 10:00 - 10:30\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=Nm4zMzBzdTV0dnQ5dTM4N2JyNmJmcTdnMXYgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6n330su5tvt9u387br6bfq7g1v",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NWw2ZXFzY2p0Ym4wM3ZhOXYydWh0cTB1azggY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 5l6eqscjtbn03va9v2uhtq0uk8",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "CHIMICA PEPE",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 11:30 - 12:00\n**Giorno:** Venerdì 17/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NmE2cWRkOGhzMm5idTNsOTZhYmx1aXBrZjMgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6a6qdd8hs2nbu3l96abluipkf3",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Venerdì"
+        }
+      ],
+      "due": "2025-01-17T11:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Venerdì",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MHM2OThncm9iNjQydTR0a2xwdnNlbjFjMjQgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 0s698grob642u4tklpvsen1c24",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "NETTO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:00 - 11:00\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NDlna2owYm5ibHZrY21xcWVmMXAxY2h2Z2ogY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 49gkj0bnblvkcmqqef1p1chvgj",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T10:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=M2Jja2xkcGRhbjFrdmRrMTNwdmJjY21wdGsgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 3bckldpdan1kvdk13pvbccmptk",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "PREGIS",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NnM1bmh0OTBlZGFpZ3FuZWFzcnA5czRrZDAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 6s5nht90edaigqneasrp9s4kd0",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "BELLAGAIA",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 11:30 - 12:30\n**Giorno:** Sabato 18/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NTUyY3JyMTNsZGlzbG9hczE4cDNhY25xbTAgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 552crr13ldisloas18p3acnqm0",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Sabato"
+        }
+      ],
+      "due": "2025-01-18T11:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Sabato",
+      "pos": "bottom"
+    },
+    {
+      "name": "PRISCO",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 06:00 - 07:00\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=NzkwbTFjc2VxbXUxOGVmMnE5Ym0wY2E5aWIgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 790m1cseqmu18ef2q9bm0ca9ib",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T06:00:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    },
+    {
+      "name": "GREEN VALLEY",
+      "desc": "**Calendario:** SCARICO FORNITORE\n\n**Orario:** 10:30 - 11:30\n**Giorno:** Domenica 19/01/2025\n\n**Creato da:** magazzino@panoramagroup.it\n\n**Link Google Calendar:** https://www.google.com/calendar/event?eid=MWVoMmgzajh2OGo2cTY5N3NuMnIydjZhZ3IgY18yMzQzNWI0NjE1YTk2MGQ4YzU0ZTFlNTMxZDYzMzZjZWZmMDRkMWJhOWQyOTFiYmYzYTEzNzhjNzZkOTA4ODI0QGc\n\n**ID Evento:** 1eh2h3j8v8j6q697sn2r2v6agr",
+      "labels": [
+        {
+          "color": "red",
+          "name": "SCARICO FORNITORE"
+        },
+        {
+          "color": "blue",
+          "name": "Domenica"
+        }
+      ],
+      "due": "2025-01-19T10:30:00.000Z",
+      "dueComplete": false,
+      "idList": "Domenica",
+      "pos": "bottom"
+    }
+  ]
+}

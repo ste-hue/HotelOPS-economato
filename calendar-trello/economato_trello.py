@@ -1,0 +1,564 @@
+#!/usr/bin/env python3
+"""
+Script principale per la gestione del Trello dell'economato.
+Prepara il Trello per qualsiasi giorno della settimana con eventi dai calendari Google.
+"""
+
+import os
+import json
+import requests
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Tuple
+from dotenv import load_dotenv
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+# Carica variabili d'ambiente
+load_dotenv()
+
+# Configurazione Google Calendar
+SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+SERVICE_ACCOUNT_FILE = 'HotelopsSuite.json'
+IMPERSONATE_USER = 'magazzino@panoramagroup.it'
+
+# Configurazione Trello
+TRELLO_API_KEY = os.getenv('TRELLO_API_KEY')
+TRELLO_TOKEN = os.getenv('TRELLO_TOKEN')
+TRELLO_BOARD_ID = os.getenv('TRELLO_BOARD_SHORTLINK')
+
+# ID dei calendari da monitorare
+CALENDAR_NAMES = {
+    'CARICO A REPARTO': None,
+    'ORDINE FORNITORE': None,
+    'RICHIESTA REPARTO': None,
+    'SCARICO FORNITORE': None
+}
+
+# Mappatura calendari -> liste Trello
+CALENDAR_TO_LIST = {
+    'CARICO A REPARTO': 'DA FARE',
+    'ORDINE FORNITORE': 'DA FARE',
+    'RICHIESTA REPARTO': 'DA FARE',
+    'SCARICO FORNITORE': 'DA FARE'
+}
+
+# Mappatura calendari -> etichette Trello
+CALENDAR_TO_LABELS = {
+    'CARICO A REPARTO': ['green', 'CARICO A REPARTO'],
+    'ORDINE FORNITORE': ['yellow', 'ORDINE FORNITORE'],
+    'RICHIESTA REPARTO': ['orange', 'RICHIESTA REPARTO'],
+    'SCARICO FORNITORE': ['red', 'SCARICO FORNITORE']
+}
+
+class EconomatoTrello:
+    def __init__(self):
+        """Inizializza il gestore Economato-Trello."""
+        self.google_service = None
+        self.trello_board_id = TRELLO_BOARD_ID
+        self.trello_lists = {}
+        self.trello_labels = {}
+        self.week_template = None
+
+        # Inizializza servizi
+        self._init_google_service()
+        self._init_trello()
+        self._load_week_template()
+
+    def _init_google_service(self):
+        """Inizializza il servizio Google Calendar."""
+        try:
+            credentials = service_account.Credentials.from_service_account_file(
+                SERVICE_ACCOUNT_FILE,
+                scopes=SCOPES
+            )
+            delegated_credentials = credentials.with_subject(IMPERSONATE_USER)
+            self.google_service = build('calendar', 'v3', credentials=delegated_credentials)
+            print(f"✓ Autenticato su Google Calendar come: {IMPERSONATE_USER}")
+        except Exception as e:
+            print(f"❌ Errore autenticazione Google: {e}")
+            raise
+
+    def _init_trello(self):
+        """Inizializza la connessione Trello e recupera liste ed etichette."""
+        try:
+            # Recupera le liste della board
+            url = f"https://api.trello.com/1/boards/{self.trello_board_id}/lists"
+            params = {
+                'key': TRELLO_API_KEY,
+                'token': TRELLO_TOKEN
+            }
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+
+            for list_item in response.json():
+                self.trello_lists[list_item['name']] = list_item['id']
+
+            print(f"✓ Trovate {len(self.trello_lists)} liste Trello")
+
+            # Recupera le etichette della board
+            url = f"https://api.trello.com/1/boards/{self.trello_board_id}/labels"
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+
+            for label in response.json():
+                if label['name']:
+                    self.trello_labels[label['name']] = label['id']
+
+            print(f"✓ Trovate {len(self.trello_labels)} etichette Trello")
+
+            # Crea etichette mancanti
+            self._create_missing_labels()
+
+        except Exception as e:
+            print(f"❌ Errore connessione Trello: {e}")
+            raise
+
+    def _create_missing_labels(self):
+        """Crea le etichette mancanti su Trello."""
+        required_labels = {
+            'CARICO A REPARTO': 'green',
+            'ORDINE FORNITORE': 'yellow',
+            'RICHIESTA REPARTO': 'orange',
+            'SCARICO FORNITORE': 'red'
+        }
+
+        for label_name, color in required_labels.items():
+            if label_name not in self.trello_labels:
+                try:
+                    # Crea nuova etichetta
+                    url = f"https://api.trello.com/1/boards/{self.trello_board_id}/labels"
+                    params = {
+                        'key': TRELLO_API_KEY,
+                        'token': TRELLO_TOKEN,
+                        'name': label_name,
+                        'color': color
+                    }
+                    response = requests.post(url, params=params)
+                    response.raise_for_status()
+
+                    new_label = response.json()
+                    self.trello_labels[label_name] = new_label['id']
+                    print(f"✓ Creata etichetta: {label_name} ({color})")
+                except Exception as e:
+                    print(f"⚠️  Impossibile creare etichetta {label_name}: {e}")
+
+    def _load_week_template(self):
+        """Carica il template settimanale se disponibile."""
+        template_file = 'week_template_2025_01_15_service_account.json'
+        if os.path.exists(template_file):
+            with open(template_file, 'r', encoding='utf-8') as f:
+                self.week_template = json.load(f)
+            print(f"✓ Template settimanale caricato")
+        else:
+            print("⚠️  Template settimanale non trovato")
+
+    def get_calendar_ids(self):
+        """Ottiene gli ID dei calendari basandosi sui nomi."""
+        try:
+            calendar_list = self.google_service.calendarList().list().execute()
+
+            for calendar in calendar_list.get('items', []):
+                calendar_name = calendar.get('summary', '')
+                if calendar_name in CALENDAR_NAMES:
+                    CALENDAR_NAMES[calendar_name] = calendar['id']
+
+            return CALENDAR_NAMES
+        except Exception as e:
+            print(f"❌ Errore nel recupero calendari: {e}")
+            return None
+
+    def get_events_for_day(self, target_date: datetime, use_template: bool = True) -> Dict[str, List]:
+        """
+        Recupera gli eventi per un giorno specifico.
+
+        Args:
+            target_date: Data per cui recuperare gli eventi
+            use_template: Se True usa il template, altrimenti legge dai calendari
+
+        Returns:
+            Dizionario con gli eventi per calendario
+        """
+        events_by_calendar = {}
+
+        if use_template and self.week_template:
+            # Usa il template settimanale
+            target_weekday = target_date.weekday()
+
+            for calendar_name, calendar_data in self.week_template['calendars'].items():
+                events_by_calendar[calendar_name] = []
+
+                for event in calendar_data['events']:
+                    # Controlla se l'evento è nel giorno giusto
+                    if 'dateTime' in event['start']:
+                        event_date = datetime.fromisoformat(event['start']['dateTime'].replace('Z', '+00:00'))
+                    else:
+                        event_date = datetime.fromisoformat(event['start']['date'])
+
+                    if event_date.weekday() == target_weekday:
+                        # Crea una copia dell'evento con la data aggiornata
+                        event_copy = event.copy()
+
+                        # Calcola la differenza di giorni tra la data del template e la data target
+                        days_diff = (target_date.date() - event_date.date()).days
+
+                        # Aggiorna le date nell'evento
+                        if 'dateTime' in event_copy['start']:
+                            start_dt = datetime.fromisoformat(event_copy['start']['dateTime'].replace('Z', '+00:00'))
+                            new_start = start_dt + timedelta(days=days_diff)
+                            event_copy['start']['dateTime'] = new_start.isoformat()
+
+                            if 'dateTime' in event_copy['end']:
+                                end_dt = datetime.fromisoformat(event_copy['end']['dateTime'].replace('Z', '+00:00'))
+                                new_end = end_dt + timedelta(days=days_diff)
+                                event_copy['end']['dateTime'] = new_end.isoformat()
+                        else:
+                            # Eventi tutto il giorno
+                            start_date = datetime.fromisoformat(event_copy['start']['date'])
+                            new_start = start_date + timedelta(days=days_diff)
+                            event_copy['start']['date'] = new_start.strftime('%Y-%m-%d')
+
+                            if 'date' in event_copy['end']:
+                                end_date = datetime.fromisoformat(event_copy['end']['date'])
+                                new_end = end_date + timedelta(days=days_diff)
+                                event_copy['end']['date'] = new_end.strftime('%Y-%m-%d')
+
+                        events_by_calendar[calendar_name].append(event_copy)
+        else:
+            # Leggi direttamente dai calendari Google
+            calendar_ids = self.get_calendar_ids()
+            start_time = target_date.replace(hour=0, minute=0, second=0).isoformat() + 'Z'
+            end_time = (target_date + timedelta(days=1)).replace(hour=0, minute=0, second=0).isoformat() + 'Z'
+
+            for calendar_name, calendar_id in calendar_ids.items():
+                if calendar_id:
+                    try:
+                        events_result = self.google_service.events().list(
+                            calendarId=calendar_id,
+                            timeMin=start_time,
+                            timeMax=end_time,
+                            singleEvents=True,
+                            orderBy='startTime'
+                        ).execute()
+
+                        events_by_calendar[calendar_name] = events_result.get('items', [])
+                    except Exception as e:
+                        print(f"❌ Errore lettura calendario {calendar_name}: {e}")
+                        events_by_calendar[calendar_name] = []
+
+        return events_by_calendar
+
+    def create_trello_card(self, title: str, description: str, list_name: str,
+                          label_names: List[str], due_date: Optional[datetime] = None) -> bool:
+        """
+        Crea una card su Trello.
+
+        Args:
+            title: Titolo della card
+            description: Descrizione della card
+            list_name: Nome della lista dove creare la card
+            label_names: Lista dei nomi delle etichette da applicare
+            due_date: Data di scadenza opzionale
+
+        Returns:
+            True se la card è stata creata con successo
+        """
+        try:
+            # Verifica che la lista esista
+            if list_name not in self.trello_lists:
+                print(f"❌ Lista '{list_name}' non trovata")
+                return False
+
+            # Prepara i parametri
+            params = {
+                'key': TRELLO_API_KEY,
+                'token': TRELLO_TOKEN,
+                'name': title,
+                'desc': description,
+                'idList': self.trello_lists[list_name],
+                'pos': 'bottom'
+            }
+
+            # Aggiungi etichette
+            label_ids = []
+            for label_name in label_names:
+                if label_name in self.trello_labels:
+                    label_ids.append(self.trello_labels[label_name])
+
+            if label_ids:
+                params['idLabels'] = ','.join(label_ids)
+
+            # Aggiungi data di scadenza se presente
+            if due_date:
+                # Formatta la data per Trello (UTC)
+                params['due'] = due_date.strftime('%Y-%m-%dT%H:%M:%S.000Z')
+
+            # Crea la card
+            url = "https://api.trello.com/1/cards"
+            response = requests.post(url, params=params)
+            response.raise_for_status()
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Errore creazione card: {e}")
+            return False
+
+    def prepare_day(self, day_offset: int = 1, use_template: bool = True):
+        """
+        Prepara il Trello per un giorno specifico.
+
+        Args:
+            day_offset: Giorni dall'oggi (0=oggi, 1=domani, etc.)
+            use_template: Se True usa il template, altrimenti legge dai calendari
+        """
+        target_date = datetime.now() + timedelta(days=day_offset)
+        date_str = target_date.strftime('%Y-%m-%d')
+        weekday_it = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica'][target_date.weekday()]
+
+        print(f"\n🗓️  Preparazione Trello per {weekday_it} {date_str}")
+        print("=" * 60)
+
+        # Recupera eventi
+        events_by_calendar = self.get_events_for_day(target_date, use_template)
+
+        # Raccoglie tutti gli eventi da creare con le loro informazioni
+        all_events_to_create = []
+
+        # Prepara i dati per ogni evento
+        for calendar_name, events in events_by_calendar.items():
+            if not events:
+                continue
+
+            for event in events:
+                # Prepara dati card
+                title = event.get('summary', 'Evento senza titolo')
+
+                # Aggiungi prefisso SCARICO per eventi SCARICO FORNITORE
+                if calendar_name == 'SCARICO FORNITORE' and not title.upper().startswith('SCARICO'):
+                    title = f"SCARICO {title}"
+
+                description = event.get('description', '')
+
+                # Estrai data/ora dell'evento per la scadenza
+                event_date = None
+                sort_time = None  # Tempo per l'ordinamento
+
+                if 'dateTime' in event.get('start', {}):
+                    start_time = datetime.fromisoformat(event['start']['dateTime'].replace('Z', '+00:00'))
+                    end_time = datetime.fromisoformat(event['end']['dateTime'].replace('Z', '+00:00'))
+                    time_str = f"{start_time.strftime('%H:%M')} - {end_time.strftime('%H:%M')}"
+                    description = f"🕐 {time_str}\n\n{description}"
+                    # Usa la data/ora di inizio come scadenza
+                    event_date = start_time
+                    sort_time = start_time
+                elif 'date' in event.get('start', {}):
+                    # Per eventi tutto il giorno, imposta scadenza a mezzogiorno
+                    event_date = datetime.fromisoformat(event['start']['date'])
+                    event_date = event_date.replace(hour=12, minute=0, second=0)
+                    sort_time = event_date
+
+                # Determina lista ed etichette
+                list_name = CALENDAR_TO_LIST.get(calendar_name, 'DA FARE')
+                label_color, label_name = CALENDAR_TO_LABELS.get(calendar_name, ['', ''])
+
+                # Aggiungi all'elenco degli eventi da creare
+                all_events_to_create.append({
+                    'title': title,
+                    'description': description,
+                    'list_name': list_name,
+                    'label_name': label_name,
+                    'event_date': event_date,
+                    'sort_time': sort_time,
+                    'calendar_name': calendar_name
+                })
+
+        # Ordina gli eventi per orario
+        all_events_to_create.sort(key=lambda x: x['sort_time'] if x['sort_time'] else datetime.max)
+
+        # Crea le card nell'ordine corretto
+        total_cards = len(all_events_to_create)
+        cards_created = 0
+
+        print(f"\n📅 Eventi totali da creare: {total_cards} (ordinati per orario)")
+
+        for event_data in all_events_to_create:
+            # Crea la card con data di scadenza
+            if self.create_trello_card(
+                event_data['title'],
+                event_data['description'],
+                event_data['list_name'],
+                [event_data['label_name']],
+                event_data['event_date']
+            ):
+                cards_created += 1
+                time_str = ""
+                if event_data['sort_time'] and event_data['sort_time'] != datetime.max:
+                    time_str = f" [{event_data['sort_time'].strftime('%H:%M')}]"
+                print(f"  ✓ {event_data['title']}{time_str} ({event_data['calendar_name']})")
+            else:
+                print(f"  ❌ {event_data['title']} ({event_data['calendar_name']})")
+
+        print(f"\n📊 Riepilogo:")
+        print(f"  - Eventi trovati: {total_cards}")
+        print(f"  - Card create: {cards_created}")
+        print(f"  - Card non create: {total_cards - cards_created}")
+
+    def clear_list(self, list_name: str = 'DA FARE'):
+        """
+        Cancella tutte le card da una lista specifica.
+
+        Args:
+            list_name: Nome della lista da svuotare
+        """
+        if list_name not in self.trello_lists:
+            print(f"❌ Lista '{list_name}' non trovata")
+            return
+
+        print(f"\n🗑️  Pulizia lista '{list_name}'...")
+
+        try:
+            # Recupera tutte le card della lista
+            url = f"https://api.trello.com/1/lists/{self.trello_lists[list_name]}/cards"
+            params = {
+                'key': TRELLO_API_KEY,
+                'token': TRELLO_TOKEN
+            }
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+
+            cards = response.json()
+
+            if not cards:
+                print("  ℹ️  Lista già vuota")
+                return
+
+            # Elimina ogni card
+            deleted = 0
+            for card in cards:
+                try:
+                    delete_url = f"https://api.trello.com/1/cards/{card['id']}"
+                    response = requests.delete(delete_url, params=params)
+                    response.raise_for_status()
+                    deleted += 1
+                    print(f"  ✓ Eliminata: {card['name']}")
+                except Exception as e:
+                    print(f"  ❌ Errore eliminazione '{card['name']}': {e}")
+
+            print(f"\n✅ Eliminate {deleted}/{len(cards)} card")
+
+        except Exception as e:
+            print(f"❌ Errore durante la pulizia: {e}")
+
+    def show_week_summary(self):
+        """Mostra un riepilogo della settimana dal template."""
+        if not self.week_template:
+            print("❌ Template settimanale non disponibile")
+            return
+
+        print("\n📊 RIEPILOGO SETTIMANA TEMPLATE")
+        print("=" * 60)
+
+        # Conta eventi per giorno
+        days_count = {i: 0 for i in range(7)}
+        weekdays_it = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica']
+
+        for calendar_name, calendar_data in self.week_template['calendars'].items():
+            for event in calendar_data['events']:
+                if 'dateTime' in event['start']:
+                    event_date = datetime.fromisoformat(event['start']['dateTime'].replace('Z', '+00:00'))
+                else:
+                    event_date = datetime.fromisoformat(event['start']['date'])
+
+                days_count[event_date.weekday()] += 1
+
+        for day_idx, count in days_count.items():
+            print(f"{weekdays_it[day_idx]:10} : {count:3} eventi")
+
+        print(f"\nTotale eventi nella settimana: {sum(days_count.values())}")
+
+
+def main():
+    """Funzione principale con menu interattivo."""
+    print("🏪 ECONOMATO TRELLO MANAGER")
+    print("=" * 60)
+
+    try:
+        manager = EconomatoTrello()
+    except Exception as e:
+        print(f"\n❌ Errore inizializzazione: {e}")
+        return
+
+    while True:
+        print("\n📋 MENU PRINCIPALE")
+        print("1. Prepara Trello per oggi")
+        print("2. Prepara Trello per domani")
+        print("3. Prepara Trello per un giorno specifico")
+        print("4. Pulisci lista DA FARE")
+        print("5. Mostra riepilogo settimana")
+        print("6. Usa calendari live invece del template")
+        print("0. Esci")
+
+        choice = input("\nScelta: ").strip()
+
+        if choice == '0':
+            print("\n👋 Arrivederci!")
+            break
+        elif choice == '1':
+            manager.prepare_day(day_offset=0)
+        elif choice == '2':
+            manager.prepare_day(day_offset=1)
+        elif choice == '3':
+            days = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica']
+            print("\nSeleziona il giorno:")
+            for i, day in enumerate(days):
+                print(f"{i+1}. {day}")
+
+            day_choice = input("\nGiorno (1-7): ").strip()
+            try:
+                day_idx = int(day_choice) - 1
+                if 0 <= day_idx < 7:
+                    # Calcola l'offset dal giorno corrente
+                    today_weekday = datetime.now().weekday()
+                    offset = (day_idx - today_weekday) % 7
+                    if offset == 0:
+                        print("\n⚠️  Hai selezionato oggi. Procedo...")
+                    manager.prepare_day(day_offset=offset)
+                else:
+                    print("❌ Scelta non valida")
+            except ValueError:
+                print("❌ Inserisci un numero valido")
+        elif choice == '4':
+            confirm = input("\n⚠️  Sei sicuro di voler cancellare tutte le card da DA FARE? (s/n): ")
+            if confirm.lower() == 's':
+                manager.clear_list('DA FARE')
+        elif choice == '5':
+            manager.show_week_summary()
+        elif choice == '6':
+            print("\n🔄 Modalità calendari live attivata per le prossime operazioni")
+            # Qui potresti impostare un flag per usare i calendari live
+        else:
+            print("❌ Scelta non valida")
+
+        input("\n[Premi INVIO per continuare]")
+
+
+if __name__ == '__main__':
+    import sys
+
+    # Supporta anche uso da linea di comando
+    if len(sys.argv) > 1:
+        manager = EconomatoTrello()
+
+        if sys.argv[1] == 'today':
+            manager.prepare_day(0)
+        elif sys.argv[1] == 'tomorrow':
+            manager.prepare_day(1)
+        elif sys.argv[1] == 'clear':
+            manager.clear_list('DA FARE')
+        elif sys.argv[1] == 'summary':
+            manager.show_week_summary()
+        else:
+            print(f"Uso: {sys.argv[0]} [today|tomorrow|clear|summary]")
+    else:
+        main()

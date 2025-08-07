@@ -1,0 +1,67 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Google credentials
+HotelopsSuite.json
+HotelOps Suite.json
+credentials.json
+token.json
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Rope
+.ropeproject/
+
+# Output files
+*.csv
+*.log
+riepilogo_*.md
+trello_*.json
+trello_*.csv
+existing_events_*.json
+replication_results_*.json
+current_week_*.json
+
+# Keep template
+!week_template_2025_01_15_service_account.json
+!trello_board_structure.json
+!requirements.txt
+!README.md
