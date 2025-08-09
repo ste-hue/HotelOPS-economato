@@ -19,7 +19,7 @@ load_dotenv()
 
 # Configurazione Google Calendar
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
-SERVICE_ACCOUNT_FILE = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'HotelopsSuite.json')
+SERVICE_ACCOUNT_FILE = 'HotelopsSuite.json'
 IMPERSONATE_USER = 'magazzino@panoramagroup.it'
 
 # Configurazione Trello
