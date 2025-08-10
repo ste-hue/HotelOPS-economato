@@ -7,25 +7,25 @@ Prepara il Trello per qualsiasi giorno della settimana con eventi dai calendari 
 import os
 import json
 import requests
-import sys
-from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from dotenv import load_dotenv
-
-# Aggiungi path per shared utils
-sys.path.append(str(Path(__file__).parent.parent.parent.parent / "shared"))
-from utils import get_google_service, get_trello_config
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 # Carica variabili d'ambiente
 load_dotenv()
 
-# Configurazione centralizzata
-MODULE_NAME = 'economato'
-trello_config = get_trello_config(MODULE_NAME)
-TRELLO_API_KEY = trello_config['key']
-TRELLO_TOKEN = trello_config['token']
-TRELLO_BOARD_ID = trello_config.get('board_id')
+# Configurazione Google Calendar
+SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+SERVICE_ACCOUNT_FILE = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'HotelopsSuite.json')
+IMPERSONATE_USER = 'magazzino@panoramagroup.it'
+
+# Configurazione Trello
+TRELLO_API_KEY = os.getenv('TRELLO_API_KEY')
+TRELLO_TOKEN = os.getenv('TRELLO_TOKEN')
+TRELLO_BOARD_ID = os.getenv('TRELLO_BOARD_SHORTLINK')
 
 # ID dei calendari da monitorare
 CALENDAR_NAMES = {
@@ -68,8 +68,13 @@ class EconomatoTrello:
     def _init_google_service(self):
         """Inizializza il servizio Google Calendar."""
         try:
-            self.google_service = get_google_service('calendar', MODULE_NAME)
-            print(f"✓ Autenticato su Google Calendar per modulo: {MODULE_NAME}")
+            credentials = service_account.Credentials.from_service_account_file(
+                SERVICE_ACCOUNT_FILE,
+                scopes=SCOPES
+            )
+            delegated_credentials = credentials.with_subject(IMPERSONATE_USER)
+            self.google_service = build('calendar', 'v3', credentials=delegated_credentials)
+            print(f"✓ Autenticato su Google Calendar come: {IMPERSONATE_USER}")
         except Exception as e:
             print(f"❌ Errore autenticazione Google: {e}")
             raise
@@ -399,168 +404,9 @@ class EconomatoTrello:
         print(f"  - Card create: {cards_created}")
         print(f"  - Card non create: {total_cards - cards_created}")
 
-    def clear_list(self, list_name: str = 'DA FARE'):
-        """
-        Cancella tutte le card da una lista specifica.
-
-        Args:
-            list_name: Nome della lista da svuotare
-        """
-        if list_name not in self.trello_lists:
-            print(f"❌ Lista '{list_name}' non trovata")
-            return
-
-        print(f"\n🗑️  Pulizia lista '{list_name}'...")
-
-        try:
-            # Recupera tutte le card della lista
-            url = f"https://api.trello.com/1/lists/{self.trello_lists[list_name]}/cards"
-            params = {
-                'key': TRELLO_API_KEY,
-                'token': TRELLO_TOKEN
-            }
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-
-            cards = response.json()
-
-            if not cards:
-                print("  ℹ️  Lista già vuota")
-                return
-
-            # Elimina ogni card
-            deleted = 0
-            for card in cards:
-                try:
-                    delete_url = f"https://api.trello.com/1/cards/{card['id']}"
-                    response = requests.delete(delete_url, params=params)
-                    response.raise_for_status()
-                    deleted += 1
-                    print(f"  ✓ Eliminata: {card['name']}")
-                except Exception as e:
-                    print(f"  ❌ Errore eliminazione '{card['name']}': {e}")
-
-            print(f"\n✅ Eliminate {deleted}/{len(cards)} card")
-
-        except Exception as e:
-            print(f"❌ Errore durante la pulizia: {e}")
-
-    def _extract_time_from_task(self, card_name: str, card_desc: str = "", card_due: str = None) -> datetime:
-        """
-        Estrae l'orario da una task esistente per l'ordinamento cronologico.
-
-        Args:
-            card_name: Nome della card
-            card_desc: Descrizione della card
-            card_due: Data di scadenza della card
-
-        Returns:
-            datetime per l'ordinamento (usa orario estratto o una priorità di default)
-        """
-        import re
-
-        # Prova a estrarre orario dalla descrizione (formato: 🕐 HH:MM - HH:MM)
-        if card_desc:
-            time_match = re.search(r'🕐\s*(\d{1,2}):(\d{2})', card_desc)
-            if time_match:
-                hour = int(time_match.group(1))
-                minute = int(time_match.group(2))
-                today = datetime.now().replace(hour=hour, minute=minute, second=0, microsecond=0)
-                return today
-
-        # Prova a estrarre orario dal nome (formato: [HH:MM])
-        time_match = re.search(r'\[(\d{1,2}):(\d{2})\]', card_name)
-        if time_match:
-            hour = int(time_match.group(1))
-            minute = int(time_match.group(2))
-            today = datetime.now().replace(hour=hour, minute=minute, second=0, microsecond=0)
-            return today
-
-        # Usa la data di scadenza se disponibile
-        if card_due:
-            try:
-                due_time = datetime.fromisoformat(card_due.replace('Z', '+00:00'))
-                return due_time
-            except:
-                pass
-
-        # Default: assegna orario basato sul tipo di task
-        if 'SCARICO' in card_name.upper():
-            return datetime.now().replace(hour=8, minute=0, second=0, microsecond=0)  # Mattina
-        elif 'CARICO' in card_name.upper():
-            return datetime.now().replace(hour=14, minute=0, second=0, microsecond=0)  # Pomeriggio
-        elif 'ORDINE' in card_name.upper():
-            return datetime.now().replace(hour=16, minute=0, second=0, microsecond=0)  # Pomeriggio
-        elif 'RICHIESTA' in card_name.upper():
-            return datetime.now().replace(hour=10, minute=0, second=0, microsecond=0)  # Mattina
-        else:
-            return datetime.now().replace(hour=12, minute=0, second=0, microsecond=0)  # Mezzogiorno
-
-    def _reorder_cards_chronologically(self, all_tasks: list):
-        """
-        Riordina tutte le card nella lista DA FARE in ordine cronologico.
-
-        Args:
-            all_tasks: Lista di dizionari con info delle task da riordinare
-        """
-        try:
-            if not all_tasks:
-                return
-
-            print(f"\n🕒 Riordino cronologico di {len(all_tasks)} task...")
-
-            # Ottieni l'ID della lista DA FARE
-            da_fare_list_id = self.trello_lists.get('DA FARE')
-            if not da_fare_list_id:
-                print("❌ Lista DA FARE non trovata per riordino")
-                return
-
-            # Riordina le task per orario
-            sorted_tasks = sorted(all_tasks, key=lambda x: x['sort_time'])
-
-            # Riposiziona ogni card su Trello in ordine cronologico
-            success_count = 0
-
-            # Sposta le carte una alla volta, partendo dalla prima (top) e andando verso il basso
-            for i, task in enumerate(sorted_tasks):
-                try:
-                    # API per spostare la card
-                    url = f"https://api.trello.com/1/cards/{task['card_id']}"
-
-                    if i == 0:
-                        # Prima carta: metti in cima
-                        position = 'top'
-                    else:
-                        # Carte successive: metti dopo la carta precedente
-                        # Usando la posizione numerica incrementale
-                        position = str((i + 1) * 65536)  # Trello usa posizioni numeriche crescenti
-
-                    params = {
-                        'key': TRELLO_API_KEY,
-                        'token': TRELLO_TOKEN,
-                        'pos': position
-                    }
-
-                    response = requests.put(url, params=params)
-                    response.raise_for_status()
-                    success_count += 1
-
-                    time_str = task['sort_time'].strftime('%H:%M') if task['sort_time'] else 'N/A'
-                    print(f"  {i+1:2}. [{time_str}] {task['title'][:50]}")
-
-                except Exception as e:
-                    print(f"  ❌ Errore riposizionamento '{task['title'][:30]}': {e}")
-
-            print(f"✅ Riordinate {success_count}/{len(all_tasks)} task cronologicamente")
-
-        except Exception as e:
-            print(f"❌ Errore durante riordino cronologico: {e}")
-
     def smart_daily_update(self, day_offset: int = 0, use_template: bool = True):
         """
-        Aggiorna intelligentemente la lista DA FARE preservando TUTTE le task esistenti.
-        Le task vengono solo AGGIUNTE, mai rimosse automaticamente.
-        Il team deve spostare manualmente le task completate in altre liste.
+        Aggiorna intelligentemente la lista DA FARE preservando le task non completate.
 
         Args:
             day_offset: Giorni dall'oggi (0=oggi, 1=domani, etc.)
@@ -652,92 +498,119 @@ class EconomatoTrello:
         # Task già esistenti che rimangono
         tasks_preserved = [task for task in new_tasks if task['title'] in existing_titles]
 
+        # Task da rimuovere (esistenti ma non più nel nuovo giorno)
+        cards_to_remove = [card for card in existing_cards if card['name'] not in new_titles]
+
         print(f"\n📊 Analisi cambiamenti:")
-        print(f"  - Task già presenti: {len(tasks_preserved)}")
+        print(f"  - Task da preservare: {len(tasks_preserved)}")
         print(f"  - Task da aggiungere: {len(tasks_to_add)}")
-        print(f"  ℹ️  Task esistenti non vengono mai rimosse automaticamente")
-        print(f"      (devono essere spostate manualmente dal team)")
+        print(f"  - Task da rimuovere: {len(cards_to_remove)}")
 
-        # 4. Aggiungi solo le nuove task (non rimuoviamo mai nulla)
+        # 4. Rimuovi le task obsolete
+        removed_count = 0
+        if cards_to_remove:
+            print(f"\n🗑️  Rimozione task obsolete...")
+            for card in cards_to_remove:
+                try:
+                    delete_url = f"https://api.trello.com/1/cards/{card['id']}"
+                    params = {
+                        'key': TRELLO_API_KEY,
+                        'token': TRELLO_TOKEN
+                    }
+                    response = requests.delete(delete_url, params=params)
+                    response.raise_for_status()
+                    removed_count += 1
+                    print(f"  ✓ Rimossa: {card['name']}")
+                except Exception as e:
+                    print(f"  ❌ Errore rimozione '{card['name']}': {e}")
+
+        # 5. Aggiungi le nuove task
         added_count = 0
-        new_card_ids = []  # Traccia le nuove card create
-
         if tasks_to_add:
             print(f"\n➕ Aggiunta nuove task...")
             # Ordina le nuove task per orario
             tasks_to_add.sort(key=lambda x: x['sort_time'] if x['sort_time'] else datetime.max)
 
             for task in tasks_to_add:
-                # Crea la card e ottieni l'ID
-                card_created = self.create_trello_card(
+                if self.create_trello_card(
                     task['title'],
                     task['description'],
                     'DA FARE',
                     [task['label_name']],
                     task['event_date']
-                )
-
-                if card_created:
+                ):
                     added_count += 1
                     time_str = ""
                     if task['sort_time'] and task['sort_time'] != datetime.max:
                         time_str = f" [{task['sort_time'].strftime('%H:%M')}]"
                     print(f"  ✓ Aggiunta: {task['title']}{time_str} ({task['calendar_name']})")
-
-                    # Nota: Non possiamo facilmente ottenere l'ID della card appena creata
-                    # dal metodo create_trello_card attuale, quindi rileggeremo tutte le card
                 else:
                     print(f"  ❌ Errore: {task['title']} ({task['calendar_name']})")
 
-        # 5. Riordino cronologico di TUTTE le task
-        if added_count > 0:
-            print(f"\n🕒 Preparazione riordino cronologico...")
-
-            # Rileggi tutte le card dalla lista DA FARE (incluse quelle appena aggiunte)
-            try:
-                url = f"https://api.trello.com/1/lists/{self.trello_lists['DA FARE']}/cards"
-                params = {
-                    'key': TRELLO_API_KEY,
-                    'token': TRELLO_TOKEN,
-                    'fields': 'id,name,desc,due'
-                }
-                response = requests.get(url, params=params)
-                response.raise_for_status()
-                all_current_cards = response.json()
-
-                # Prepara lista per riordino con tutti i dettagli necessari
-                all_tasks_for_sorting = []
-                for card in all_current_cards:
-                    # Estrai l'orario dalla card esistente
-                    sort_time = self._extract_time_from_task(
-                        card['name'],
-                        card.get('desc', ''),
-                        card.get('due')
-                    )
-
-                    all_tasks_for_sorting.append({
-                        'card_id': card['id'],
-                        'title': card['name'],
-                        'sort_time': sort_time
-                    })
-
-                # Riordina cronologicamente tutte le card
-                self._reorder_cards_chronologically(all_tasks_for_sorting)
-
-            except Exception as e:
-                print(f"❌ Errore durante riordino: {e}")
-
         # 6. Riepilogo finale
         print(f"\n✅ Aggiornamento completato:")
-        print(f"  - Task già presenti: {len(tasks_preserved)}")
+        print(f"  - Task preservate: {len(tasks_preserved)}")
+        print(f"  - Task rimosse: {removed_count}/{len(cards_to_remove)}")
         print(f"  - Task aggiunte: {added_count}/{len(tasks_to_add)}")
-        print(f"  - Task esistenti: CONSERVATE (da spostare manualmente)")
-        print(f"  - Ordinamento: CRONOLOGICO (mattina → sera)")
 
-        final_count = len(existing_cards) + added_count
+        final_count = len(existing_cards) - removed_count + added_count
         print(f"  - Totale finale nella lista DA FARE: {final_count}")
 
-    def show_week_summary(self):
+    def clear_list(self, list_name: str = 'DA FARE'):
+        """
+        Cancella tutte le card da una lista specifica.
+
+        Args:
+            list_name: Nome della lista da svuotare
+        """
+        if list_name not in self.trello_lists:
+            print(f"❌ Lista '{list_name}' non trovata")
+            return
+
+        print(f"\n🗑️  Pulizia lista '{list_name}'...")
+
+        try:
+            # Recupera tutte le card della lista
+            url = f"https://api.trello.com/1/lists/{self.trello_lists[list_name]}/cards"
+            params = {
+                'key': TRELLO_API_KEY,
+                'token': TRELLO_TOKEN
+            }
+            response = requests.get(url, params=params)
+            response.raise_for_status()
+
+            cards = response.json()
+
+            if not cards:
+                print("  ℹ️  Lista già vuota")
+                return
+
+            # Elimina ogni card
+            deleted = 0
+            for card in cards:
+                try:
+                    delete_url = f"https://api.trello.com/1/cards/{card['id']}"
+                    response = requests.delete(delete_url, params=params)
+                    response.raise_for_status()
+                    deleted += 1
+                    print(f"  ✓ Eliminata: {card['name']}")
+                except Exception as e:
+                    print(f"  ❌ Errore eliminazione '{card['name']}': {e}")
+
+            print(f"\n✅ Eliminate {deleted}/{len(cards)} card")
+
+        except Exception as e:
+            print(f"❌ Errore durante la pulizia: {e}")
+
+    def smart_daily_update(self, day_offset: int = 0, use_template: bool = True):
+        """
+        Aggiorna intelligentemente la lista DA FARE preservando le task non completate.
+
+        Args:
+            day_offset: Giorni dall'oggi (0=oggi, 1=domani, etc.)
+            use_template: Se True usa il template, altrimenti legge dai calendari
+        """
+        target_date = datetime.now()how_week_summary(self):
         """Mostra un riepilogo della settimana dal template."""
         if not self.week_template:
             print("❌ Template settimanale non disponibile")
