@@ -1,30 +1,40 @@
-# Economato MVP - Versione Minimale
+# Economato - Gestione Giacenze e Consumi
 
-## Cosa fa
-- Carica file XML di giacenze e consumi
-- Mostra una tabella filtrabile
-- Esporta un report Excel consolidato
+Un'applicazione semplice per gestire le giacenze di magazzino e analizzare i consumi.
 
-## Come avviarlo
+## Installazione
+
 ```bash
-streamlit run app.py
+pip install -r requirements.txt
 ```
 
-## Struttura del progetto
-```
-mvp_minimal/
-├── app.py           # Tutta l'applicazione (106 righe)
-├── requirements.txt # 3 dipendenze
-└── README.md        # Questo file
+## Avvio
+
+```bash
+streamlit run economato.py
 ```
 
 ## Funzionalità
-1. **Upload**: Carica XML giacenze + XML consumi (multipli)
-2. **Visualizza**: Tabella con filtro per testo
-3. **Esporta**: Excel con fogli giacenze, consumi per mese e riepilogo
 
-## Note
-- Niente validazioni complesse
-- Niente configurazioni
-- Niente moduli separati
-- Solo quello che serve per funzionare
+- Caricamento automatico dei file XML predefiniti
+- Visualizzazione giacenze con ricerca
+- Analisi consumi mensili
+- Generazione report Excel con:
+  - Analisi completa articoli
+  - Riordini urgenti
+  - Statistiche
+
+## File Predefiniti
+
+L'app cerca automaticamente i file in:
+- Giacenze: `.../economato/giacienze/Eco_SituazioneAvanzataArticoli_giacienze11082025.xml`
+- Consumi: `.../economato/consumi/xml/ECO_SituazioneConsumi_DettagliPerArticolo_dal1aprile.xml`
+
+È possibile caricare file alternativi deselezionando le checkbox "Usa file predefinito".
+
+## Report Excel
+
+Il report generato include:
+- **Analisi Completa**: Tutti gli articoli con giacenze, consumi mensili e calcoli
+- **Riordino Urgente**: Articoli con copertura inferiore a 15 giorni
+- **Statistiche**: Riepilogo generale del magazzino
