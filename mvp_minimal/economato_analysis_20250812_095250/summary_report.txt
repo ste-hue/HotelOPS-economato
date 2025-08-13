@@ -1,0 +1,172 @@
+============================================================
+ECONOMATO XML DATA ANALYSIS REPORT
+Generated on: 2025-08-12 09:52:50
+============================================================
+
+## INVENTORY SUMMARY
+Total Products: 3238
+Products in Stock: 806
+Products Out of Stock: 2394
+Total Inventory Value: €65,982.86
+Categories: 82
+Suppliers: 75
+
+### Top 10 Items by Value
+codice_articolo                             descrizione  esistenza  valore_giacenza
+  VAR.COR.00017            BALSAMO OLIVA 30 ML X 149 PZ     4619.0        4801.4505
+  VAR.COR.00024        CREMA CORPO OLIVA 50 ML X 149 PZ     8642.0        4551.7414
+  VAR.COR.00016      IGIENE INTIMA OLIVA 20 ML X 447 PZ     5364.0        2056.0212
+  FOO.OLI.00005 OLIO EXTRA VERGINE DOP VALLE BELICE 5LT      120.0        1717.3200
+  VAR.COR.00020                VANITY SET OLIVA  660 PZ     3990.0        1511.4120
+  VAR.MON.00091    TOVAGLIOLI POKET AZZ 40X35 50PZX24CF      207.0        1097.7210
+  VAR.COR.00019          SAPONETTA OLIVA 15 GR X 500 PZ     8500.0        1062.5000
+  VAR.COR.00018     DOCCIA SHAMPOO OLIVA 50 ML X 149 PZ     2086.0        1001.2800
+  VAR.MON.00005        TOVAGLIOLO TNT 40X40 (16CFX50PZ)      185.0         982.8125
+  VAR.MON.00041         BICCHIERI PERSONALIZZATI 1000PZ       89.0         863.3000
+
+## CONSUMPTION SUMMARY
+Analysis Period: 2025-04-16 00:00:00 to 2025-08-10 00:00:00
+Total Consumption Records: 3861
+Unique Products Consumed: 162
+Departments: 3
+
+### Top 10 Most Consumed Items
+codice_articolo                        descrizione  quantita_consumata
+  BEV.BIR.00005           BIRRA PORETTI SPINA 20LT             37400.0
+  BEV.BOL.00013 PROSECCO BASE (BIANCAVIGNA 75CLX6)             24694.0
+  BEV.VIN.00031   VINO BIANCO BASE (SAMMARCO 75CL)              9600.0
+  BEV.CAF.00003                     CAFFE IN GRANI              6903.0
+  BEV.VIN.00036    VINO ROSSO BASE (SAMMARCO 75CL)              3990.0
+  BEV.APE.00003                             APEROL              3672.0
+  BEV.LIQ.00027            LIQUORE LIMONCELLO LT.2              2577.0
+  BEV.VIN.00033   VINO ROSATO BASE (SAMMARCO 75CL)              2535.0
+  BEV.LAT.00001              LATTE INTERO UHT LT.1              1794.0
+  BEV.SOF.00060                  SUCCO BASE ANANAS              1206.0
+
+## REORDER SUGGESTIONS
+Items Requiring Urgent Reorder: 122
+
+### Urgent Reorders
+codice_articolo                            descrizione     esistenza  giorni_inventario  quantita_riordino
+  BEV.VIN.00014        VINO GROTTE GRECO DI TUFO 75 CL  1.200000e+01                9.2               39.0
+  BEV.SOF.00014                COCA COLA 33CL X 24 VAP  2.400000e+01                5.2              137.0
+  BEV.SOF.00016         SCHWEPPES GINGER ALE 18CL X 24  0.000000e+00                0.0               49.0
+  BEV.VIN.00012          VINO BIANCOLELLA ISCHIA 75 CL  0.000000e+00                0.0               32.0
+  BEV.SOF.00018                LEMONSODA 20CL X 24 VAP  2.000000e+01               10.1               59.0
+  BEV.SOF.00040         GINGER BEER KILNEY 20CLX24 VAP  0.000000e+00                0.0               51.0
+  BEV.VIN.00005       VINO IL MONTE IDA GIORDANO 75 CL  9.000000e+00                7.1               38.0
+  BEV.VIN.00004              VINO ROSSO SAMMARCO 75 CL  0.000000e+00                0.0               68.0
+  BEV.VIN.00003             VINO ROSATO SAMMARCO 75 CL  0.000000e+00                0.0               30.0
+  BEV.VIN.00002             VINO BIANCO SAMMARCO 75 CL  0.000000e+00                0.0               68.0
+  BEV.TEQ.00004          TEQUILA DON JULIO BLANCO 70CL  2.800000e+00                0.2              450.0
+  BEV.TEQ.00003           TEQUILA CASAMIGOS ANEJO 70CL  1.400000e+00                0.2              180.0
+  BEV.TEQ.00001               TEQUILA JOSE CUERVO 70CL  2.300000e+00                0.2              327.0
+  BEV.SOF.00076               COCA COLA 20 CL X 24 VAP  1.200000e+01                7.2               50.0
+  BEV.SOF.00045             COCA COLA ZERO 33CLX24 VAP  4.800000e+01               11.6              124.0
+  BEV.SOF.00051                      SODA SIFONE 1,5LT  3.000000e+01                2.4              373.0
+  BEV.SOF.00059               SUCCO BASE CRANBERRY 1LT  2.000000e+00                0.4              137.0
+  BEV.SOF.00060                      SUCCO BASE ANANAS  3.000000e+00                0.2              574.0
+  BEV.SOF.00065                       LEMON SODA CRODO  0.000000e+00                0.0              165.0
+  BEV.VIN.00015   VINO PENDINO FIANO DI AVELLINO 75 CL  6.000000e+00                6.0               30.0
+  BEV.VIN.00018       VINO VETTE SAUVIGNON BLANC 75 CL  0.000000e+00                0.0               35.0
+  BEV.VIN.00017           VINO CHARDONNAY FRIULI 75 CL  4.000000e+00                2.8               42.0
+  FOO.SDO.00070                   CREMA DI COCCO 400GR  1.200000e+00                0.2              182.0
+  FOO.PPP.00026                   PANNA FRESCA LIQUIDA  0.000000e+00                0.0              231.0
+  FOO.PPP.00009                      ALBUME D'UOVO 1LT  4.000000e+00                1.7               71.0
+  BEV.WHS.00016                   WHISKY TALISKER 70CL  0.000000e+00                0.0              180.0
+  BEV.WHS.00014              WHISKY MACCALLAN 12Y 70CL  0.000000e+00                0.0              270.0
+  BEV.WHS.00013               WHISKY LAPHROIG 10Y 70CL  0.000000e+00                0.0              180.0
+  BEV.WHS.00010              WHISKEY JIM BEAM RYE 70CL  0.000000e+00                0.0              150.0
+  BEV.WHS.00009           WHISKEY JIM BEAM BOURBON 1LT  1.000000e+00                0.1              327.0
+  BEV.WHS.00007           WHISKEY BULLEIT BOURBON 70CL  7.000000e-01                0.1              180.0
+  BEV.WHS.00004                    WHISKY JAMESON 1 LT  1.000000e+00                0.1              523.0
+  BEV.WHS.00003       WHISKY JOHNNY WALKER BLACK LABEL  0.000000e+00                0.0              340.0
+  BEV.WHS.00001                   WHISKY JACK DANIEL'S  1.000000e+00                0.1              531.0
+  BEV.VOD.00013                    VODKA ALTAMURA 70CL  1.400000e+00                0.1              460.0
+  BEV.VOD.00012                    VODKA KETEL ONE 1LT  0.000000e+00                0.0              300.0
+  BEV.VOD.00009               VODKA CITRON ABSOLUT 1LT  1.000000e+00                0.1              240.0
+  BEV.VOD.00008                 VODKA BASE (STOLI) 1LT  4.000000e+00                0.3              372.0
+  BEV.VOD.00007                     VODKA NEMIROFF 1LT  3.000000e+00                0.5              180.0
+  BEV.VOD.00003                   VODKA GREY GOOSE 1LT  7.000000e-01                0.0              429.0
+  BEV.VIN.00036        VINO ROSSO BASE (SAMMARCO 75CL)  8.025000e+01                1.6             1496.0
+  BEV.VIN.00033       VINO ROSATO BASE (SAMMARCO 75CL)  9.000000e+01                2.3             1170.0
+  BEV.VIN.00031       VINO BIANCO BASE (SAMMARCO 75CL)  1.035000e+02                1.1             2939.0
+  BEV.VIN.00030         VINO CAPITIROSE TRAMONTI 75 CL  1.200000e+01                9.0               40.0
+  BEV.VIN.00029     VINO ROSIE AGLIANICO IRPINIA 75 CL  1.000000e+01                5.0               60.0
+  BEV.VIN.00028              VINO SALICERCHI DOC 75 CL  0.000000e+00                0.0               30.0
+  BEV.VIN.00027              VINO MONTECORVO DOC 75 CL  0.000000e+00                0.0               30.0
+  BEV.VIN.00026     VINO MONTEPULCIANO D'ABRUZZO 75 CL  7.000000e+00                6.0               35.0
+  BEV.VIN.00025      VINO NIPOZZANO VECCHIE VITI 75 CL  6.000000e+00                6.0               30.0
+  BEV.VIN.00020         VINO VADANTICO AGLIANICO 75 CL  1.000000e+01                8.0               38.0
+  BEV.VIN.00019             VINO PUNTA CROCE DOC 75 CL  0.000000e+00                0.0               45.0
+  BEV.VIN.00016         VINO PINOT GRIGIO FRIULI 75 CL  6.000000e+00                3.6               50.0
+  BEV.SOF.00003          SUCCO ARANCIA AMITA 20CL X 24  0.000000e+00                0.0               30.0
+  BEV.RUM.00010                      RUM HAVANA 3Y 1LT  4.440892e-16                0.0              245.0
+  BEV.RUM.00011                      RUM HAVANA 7Y 1LT  2.000000e+00                0.2              270.0
+  BEV.GIN.00012                        GIN J.ROSE 70CL  5.551115e-17                0.0              280.0
+  BEV.GIN.00009                        GIN BULLDOG 1LT  0.000000e+00                0.0              180.0
+  BEV.GIN.00008                   GIN BASE (BEEFEATER)  5.000000e+00                0.5              311.0
+  BEV.GIN.00005                           GIN MARE 1LT  7.000000e-01                0.1              300.0
+  BEV.GIN.00003                          GIN HENDRIK'S  2.800000e+00                0.5              180.0
+  BEV.GIN.00002                GIN BOMBAY SAPPHIRE 1LT  1.000000e+00                0.1              355.0
+  BEV.GIN.00001                      GIN TANQUERAY 1LT  1.000000e+00                0.1              300.0
+  BEV.DIS.00012      DISTILLATO MEZCAL VIDA DEL MAGUEY  0.000000e+00                0.0               60.0
+  BEV.DIS.00009           DISTILLATO PISCO BARSOL 70CL  0.000000e+00                0.0              180.0
+  BEV.DIS.00007          GRAPPA BARRICATA 18 LUNE 70CL  0.000000e+00                0.0              250.0
+  BEV.DIS.00005             GRAPPA BIANCA BARBERA 70CL -4.440892e-16               -0.0               75.0
+  BEV.COG.00002                    COGNAC MARTELL 70CL  2.220446e-16                0.0              281.0
+  BEV.CAF.00003                         CAFFE IN GRANI  3.800000e+01                0.6             1991.0
+  BEV.BOL.00013     PROSECCO BASE (BIANCAVIGNA 75CLX6)  9.575000e+01                0.4             6498.0
+  BEV.GIN.00013                     GIN MONKEY 47 50CL  0.000000e+00                0.0              180.0
+  BEV.BOL.00010 PROSECCO CUVEE REAL FRANCIACORTA 75 CL  6.000000e+00                6.0               30.0
+  BEV.BOL.00007     PROSECCO PRIMA CUVEE TREVISO 75 CL  5.000000e+00                5.0               30.0
+  BEV.BOL.00003      CHAMPAGNE SECRET DE FAMILLE 75 CL  3.000000e+00                3.0               30.0
+  BEV.BOL.00001  PROSECCO BASE (TERRA SERENA 75CL X 6)  0.000000e+00                0.0               45.0
+  BEV.BIR.00005               BIRRA PORETTI SPINA 20LT  6.000000e+01                0.2            10788.0
+  BEV.BIR.00004     BIRRA TENNENT'S SUPER CL 33X24 VAP  0.000000e+00                0.0              165.0
+  BEV.APE.00006                                CAMPARI  1.100000e+01                0.9              360.0
+  BEV.APE.00005           CAMPARI SODA 10CL X 50PZ VAP  0.000000e+00                0.0               30.0
+  BEV.APE.00003                                 APEROL  2.300000e+01                0.6             1102.0
+  BEV.AMA.00006                      AMARO AVERNA 1 LT  1.000000e+00                0.2              180.0
+  BEV.AMA.00005                   AMARO RAMAZZOTTI 1LT -2.220446e-16               -0.0              288.0
+  BEV.AMA.00004                     AMARO DEL CAPO 1LT  1.000000e+00                0.1              390.0
+  BEV.AMA.00002                     AMARO JAGERMEISTER  1.000000e+00                0.1              240.0
+  BEV.AMA.00001                    AMARO FERNET BRANCA  1.500000e+00                0.2              180.0
+  BEV.ACQ.00006        ACQUA NATIA/ELECTA 75CL X12 VAR  8.400000e+01               11.6              216.0
+  BEV.BOL.00008                PROSECCO ROSE DOC 75 CL  3.000000e+00                3.0               30.0
+  BEV.GIN.00020                         GIN BALLKANIKO  1.400000e+00                1.0               41.0
+  BEV.GUA.00001                        GRANATINA MONIN  1.000000e+00                0.3               91.0
+  BEV.GUA.00007         SCIROPPO FIORI DI SAMBUCO 70CL  1.400000e+00                0.2              192.0
+  BEV.RUM.00009              RUM BASE DARK GOSLING 1LT  1.110223e-16                0.0              288.0
+  BEV.RUM.00002           RUM BACARDI CARTA BLANCA 1LT  2.000000e+00                0.1              423.0
+  BEV.RUM.00001                          RUM ZACAPA 23 -2.220446e-16               -0.0              162.0
+  BEV.LIQ.00054             LIQUORE BRIOTTET MORE 70CL  0.000000e+00                0.0               72.0
+  BEV.LIQ.00050      LIQUORE ORANGE CURACAO MONIN 70CL  0.000000e+00                0.0               61.0
+  BEV.LIQ.00048                LIQUORE TRIPLE SEC BOLS  0.000000e+00                0.0              113.0
+  BEV.LIQ.00045     LIQUORE VERMOUTH CARPANO ROSSO 1LT  3.000000e+00                0.7              131.0
+  BEV.LIQ.00043      LIQUORE VERMOUTH CARPANO DRY 1 LT  1.000000e+00                0.9               33.0
+  BEV.LIQ.00039                LIQUORE PEACH TREE 70CL  0.000000e+00                0.0               60.0
+  BEV.LIQ.00038                LIQUORE FRANGELICO 70CL  0.000000e+00                0.0              180.0
+  BEV.LIQ.00032                   LIQUORE MILIARE 70CL  2.100000e+00                0.2              294.0
+  BEV.LIQ.00030                     AMARETTO DISARONNO  0.000000e+00                0.0              223.0
+  BEV.LIQ.00027                LIQUORE LIMONCELLO LT.2  1.200000e+01                0.5              773.0
+  BEV.LIQ.00022                    LIQUORE KALHUA 1 LT  1.000000e+00                0.3               91.0
+  BEV.LIQ.00019                  LIQUORE DRAMBUIE 70CL -1.110223e-16               -0.0              180.0
+  BEV.LIQ.00014         LIQUORE SAMBUCA MOLINARI 1,5LT  1.500000e+00                0.1              428.0
+  BEV.LIQ.00013              LIQUORE GRAND MARNIER 1LT  7.216450e-16                0.0              428.0
+  BEV.GUA.00008           SCIROPPO D'ORZATA FABBRI 1LT -2.220446e-16               -0.0               81.0
+  BEV.GUA.00009            SCIROPPO D'AGAVE MONIN 70CL  7.000000e-01                0.4               60.0
+  BEV.GUA.00010                   SCIROPPO DI ZUCCHERO  0.000000e+00                0.0              108.0
+  BEV.GUA.00012                              ANGOSTURA -5.551115e-17               -0.0               30.0
+  BEV.GUA.00015                SUCCO DI POMODORO 200ML  1.200000e+00                0.6               58.0
+  BEV.GUA.00021                     LATTE DI COCCO 1LT  3.000000e+00                0.5              180.0
+  BEV.RUM.00015      RUM DIPLOMATICO RESERVE EXCLUSIVA  0.000000e+00                0.0              180.0
+  BEV.GUA.00040             SCIROPPO ANGURIA MONIN 1LT  0.000000e+00                0.0              225.0
+  BEV.LIQ.00001                LIQUORE CREMA DI MELONE  4.440892e-16                0.0              275.0
+  BEV.LIQ.00002        LIQUORE CREMA DI LIMONCELLO 1LT  8.881784e-16                0.0              194.0
+  BEV.LIQ.00004            LIQUORE DI FINOCCHIETTO 1LT  5.000000e-01                0.1              231.0
+  BEV.LIQ.00005          LIQUORE CONCERTO DI ERBE 50CL  1.000000e+00                0.1              360.0
+  BEV.LIQ.00006               LIQUORE CICERENELLA 50CL  5.000000e-01                0.1              262.0
+  BEV.LIQ.00011                        LIQUORE BAYLE'S  0.000000e+00                0.0              206.0
+  BEV.LAT.00001                  LATTE INTERO UHT LT.1  4.100000e+01                1.6              769.0
+  FOO.UOV.00001          UOVA FRESCHE L CAT. A X 180PZ  0.000000e+00                0.0               60.0
